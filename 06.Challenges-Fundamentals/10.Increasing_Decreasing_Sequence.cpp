@@ -1,0 +1,82 @@
+/*
+Given an array S of size N , check if it is possible to split sequence into two sequences -
+s1 to si and si+1 to sN such that first sequence is strictly decreasing and second is strictly increasing. Print true/false as output.
+
+Input Format
+First line contains a single integer N denoting the size of the input.
+Next N lines contain a single integer each denoting the elements of the array S.
+
+Constraints
+0 < N < 1000 Each number in sequence S is > 0 and < 1000000000
+
+Output Format
+Print boolean output - "true" or "false" defining whether the sequence is increasing - decreasing or not.
+
+Sample Input
+5
+1
+2
+3
+4
+5
+Sample Output
+true
+Explanation
+Carefully read the conditions to judge which all sequences may be valid. Don't use arrays or lists.
+
+*/
+
+#include<bits/stdc++.h>
+using namespace std;
+
+bool increasingDecreasing(int n)
+{
+    int prev;
+    cin >> prev;
+
+    bool isValid = true;
+    bool isDecreasing = true; //Assume sequence to be decreasing initially
+
+    while (--n)
+    {
+        int curr;
+        cin >> curr;
+        if (curr == prev)
+        {
+            // Since all sequences must be either strictly increasing
+            // or decreasing, two consecutive elements cannot
+            // be equal
+            isValid = false;
+            break;
+        }
+        else if (curr > prev)
+        {
+            // Sequence started increasing
+            isDecreasing = false;
+        }
+        else if (!isDecreasing && curr < prev)
+        {
+            // If sequence is increasing and then starts decreasing again,
+            // condition is violated
+            isValid = false;
+            break;
+        }
+
+        prev = curr;
+    }
+
+    return isValid;
+}
+
+int main() {
+	int n;
+	cin >> n;
+	bool ans = increasingDecreasing(n);
+	if(ans){
+		cout << "true";
+	}
+	else{
+		cout << "false";
+	}
+	return 0;
+}
