@@ -1,7 +1,5 @@
 /* Hacker Blocks */
 /* Title - Piyush and Magical Park */
-/* Created By - Akash Modak */
-/* Date - 25/06/2020 */
 
 // Piyush is lost in a magical park which contains N rows and M columns.In order to get out of park safely and return home, he needs atleast K amount of strength.Given a N by M pattern, your task is to find weather Piyush can ever escape the park.
 

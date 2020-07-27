@@ -17,8 +17,8 @@ int main(){
         for(int j=0; j<n; j++){
 
         //Extracting bottom right for all possible top left
-            for(int k=i+1; k<n; k++){
-                for(int l=j+1; l<n; l++){
+            for(int k=i; k<n; k++){
+                for(int l=j; l<n; l++){
 
                 // Sum of current matrix
                     for(int z=i; z<=k; z++){
