@@ -1,6 +1,7 @@
 #include<bits/stdc++.h>
 using namespace std;
 
+//Suffix Sum Array
 int maxSumSubmatrix(int **arr, int n, int m){
     //Col wise addition First
     for(int i=n-1; i>=0; i--){
@@ -18,7 +19,7 @@ int maxSumSubmatrix(int **arr, int n, int m){
     int result = INT_MIN;
     for(int i=0; i<n; i++){
         for(int j=0; j<m; j++){
-            result = max(result, arr[i]);
+            result = max(result, arr[i][j]);
         }
     }
 
