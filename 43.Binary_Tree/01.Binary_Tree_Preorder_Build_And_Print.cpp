@@ -27,6 +27,7 @@ node* buildTree(){
     root->right = buildTree();
     return root;
 }
+
 void print(node *root){
     if(root == NULL){
         return;

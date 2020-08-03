@@ -249,27 +249,32 @@ node* merge(node* a, node* b){
     return c;
 }
 
+node *mergeSort(node *head){
+    //base case
+    if(head == NULL or head->next==NULL)
+        return head;
+
+    //recursive case
+    //1.Break
+    node *mid = mid_point_fast_runner(head);
+    node *a = head;
+    node *b = mid->next;
+
+    mid->next = NULL;
+
+    //2.rec sort the two parts
+    a = mergeSort(a);
+    b = mergeSort(b);
+
+    //3. Merge Them
+    node *c = merge(a,b);
+    return c;
+}
+
 int main(){
 
-    node* head = NULL;
-    insertAtHead(head, 5);
-    insertAtHead(head, 4);
-    insertAtHead(head, 3);
-    insertAtTail(head, 8);
-    insertInMiddle(head, 2, 3);
-    insertInMiddle(head, 1, 4);
-    insertInMiddle(head, 6, 5);
-    print(head);
-    reverse(head);
-    print(head);
-    head = reverse_recursive(head);
-    print(head);
-    node* m = mid_point_fast_runner(head);
-    cout << m->data << endl;
-    node* kl = kth_node_fast_runner(head, 2);
-    cout << kl->data<< endl;
-    head = merge(head, head2);
-    cout << head;
-
+    node* head;
+    cin >> head;
+    cout << head << endl;
     return 0;
 }
