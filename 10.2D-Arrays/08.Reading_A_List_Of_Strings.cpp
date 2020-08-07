@@ -10,7 +10,7 @@ int main() {
 	int n;
 	cin >> n;
 
-	cin.get();
+	n = cin.get();
 	for (int i = 0; i < n; i++) {
 		cin.getline(a[i], 1000);
 	}
@@ -19,12 +19,6 @@ int main() {
 	for (int i = 0; i < n; i++) {
 		cout << a[i] << endl;
 	}
-
-
-
-
-
-
 
 	return 0;
 }

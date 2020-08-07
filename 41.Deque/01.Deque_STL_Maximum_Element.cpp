@@ -68,7 +68,6 @@ int main(){
 
         //3. Add the new elements(Expansion)
         Q.push_back(i);
-
     }
     cout << a[Q.front()] << endl;
 
