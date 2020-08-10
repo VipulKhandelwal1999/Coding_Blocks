@@ -1,4 +1,3 @@
-
 /*
 Take as input N, the size of array. Take N more inputs and store that in an array. Take as input “target”, a number. Write a function which prints all pairs of numbers which sum to target.
 
@@ -24,39 +23,44 @@ Sample Output
 2 and 3
 Explanation
 Find any pair of elements in the array which has sum equal to target element and print them.
+
+Logic:-
+For the sample case, array = [1,3,4,2,5] and target=5, we need to find two numbers whose sum is equal to the target.Here in this case target sum pairs are 1, 4 and 2 , 3.
+
+Algorithm:
+
+1.First sort the given array.
+2.Now take two variables one as left and other as right starting from 0th and end index of the sorted array respectively.
+3.Now iterate till left<right.
+
+        3.1 Calculate the sum of the elements at left and right position
+        3.1.1 If the sum is equal to the target then print both the elements. //printing target sum pairs
+        3.1.2 If the sum is less than the target then increase the left by 1
+        3.1.3 Else decrease the right by 1
+4.End loop.Thus, all the pairs has been printed .
 */
 
-#include<iostream>
-#include<bits/stdc++.h>
-using namespace std;
-
-int main() {
-
-	int n;
-	cin >> n;
-	int arr[n], k;
-
-	for(int i=0; i<n; i++){
-		cin >> arr[i];
-	}
-	cin >> k;
-	sort(arr, arr+n);
-
-	int i = 0;
-	int j = n-1;
-
-	while(i<j){
-		if(arr[i]+arr[j] == k){
-			cout << arr[i] << " and " << arr[j] << endl;
-			i++;
-			j--;
-		}
-		else if(arr[i]+arr[j] > k){
-			j--;
-		}
-		else{
-			i++;
-		}
-	}
-	return 0;
+void targetSum(int *arr, int n, int target)
+{
+    sort(arr, arr + n);
+    int left = 0;
+    int right = n - 1;
+    while (left < right)
+    {
+        int sum = arr[left] + arr[right];
+        if (sum > target)
+        {
+            right--;
+        }
+        else if (sum < target)
+        {
+            left++;
+        }
+        else
+        {
+            cout << arr[left] << " and " << arr[right] << endl;
+            left++;
+            right--;
+        }
+    }
 }
