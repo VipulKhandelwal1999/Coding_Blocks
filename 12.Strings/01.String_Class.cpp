@@ -60,24 +60,26 @@ int main() {
     string word = "apple";
     int len = word.length();
     cout << s << endl;
+    //idx -> index from which you want to delete
+    //second parameter -> how many characters you want to delete
     s.erase(idx,len+1);
     cout << s << endl;
 
     //Iterate over all the characters in the string
-    for(int i=0;i<s1.length();i++){
+    for(int i=0; i<s1.length(); i++){
         cout << s1[i] << ":";
     }
     cout << endl;
 
     //Iterators
-    for(string::iterator it = s1.begin();it!=s1.end();it++){
+    for(string::iterator it = s1.begin(); it!=s1.end(); it++){
         cout << (*it) << ",";
     }
 
     cout << endl;
 
     //For Each Loop
-    for(char c:s1){
+    for(char c: s1){
         cout << c << ".";
     }
 
