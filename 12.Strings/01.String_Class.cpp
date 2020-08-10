@@ -68,10 +68,12 @@ int main() {
         cout << s1[i] << ":";
     }
     cout << endl;
+
     //Iterators
     for(string::iterator it = s1.begin();it!=s1.end();it++){
         cout << (*it) << ",";
     }
+
     cout << endl;
 
     //For Each Loop
