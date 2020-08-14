@@ -142,6 +142,7 @@ class Pair{
         int diameter;
 };
 
+//Bottom Up Approach - Post Order Traversal
 Pair fastDiameter(node*root){
     Pair p;
     if(root==NULL){
