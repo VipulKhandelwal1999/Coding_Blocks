@@ -38,6 +38,8 @@ bool ratInMaze(char maze[10][10], int soln[][10], int i , int j, int m, int n)
     bool downSuccess = ratInMaze(maze, soln, i+1, j, m, n);
 
     //Backtracking
+    soln[i][j] = 0;
+
     if(rightSuccess || downSuccess){
         return true;
     }

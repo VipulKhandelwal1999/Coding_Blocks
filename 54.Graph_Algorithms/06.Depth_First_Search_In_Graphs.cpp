@@ -1,4 +1,3 @@
-#include<iostream>
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -11,6 +10,7 @@ class Graph {
             l[x].push_back(y);
             l[y].push_back(x);
         }
+
         void bfs(T src){
             map<T, int> visited;
             queue<T> q;
@@ -30,7 +30,34 @@ class Graph {
                 }
             }
         }
+
+        void dfs_helper(T src, map<T, bool> &visited){
+            //Recursive function that will traverse the graph
+
+            cout << src << " ";
+            visited[src] = true;
+
+            //go to all nbr of that node that is not visited
+            for(T nbr: l[src]){
+                if(!visited[nbr]){
+                    dfs_helper(nbr, visited);
+                }
+            }
+        }
+
+        void dfs(T src){
+            map<T, bool> visited;
+            //Mark all the nodes as not visited in the beginning
+            for(auto p: l){
+                T node = p.first;
+                visited[node] = false;
+            }
+            //call the helper function
+            dfs_helper(src, visited);
+        }
 };
+
+
 
 int main() {
 
@@ -40,7 +67,7 @@ int main() {
     g.addEdge(1, 2);
     g.addEdge(3, 4);
     g.addEdge(4, 5);
-    g.bfs(0);
+    g.dfs(0);
 
     return 0;
 }
