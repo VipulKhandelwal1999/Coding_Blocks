@@ -20,7 +20,7 @@ ll minSteps(ll n){
     if(n%3 == 0){
         op1 =  minSteps(n/3);
     }
-    else if(n%2==0){
+    if(n%2==0){
         op2 = minSteps(n/2);
     }
     op3 = minSteps(n-1);
@@ -35,7 +35,7 @@ int main() {
     ll n;
     cin >> n;
 
-    cout << stepsTopDown(n) << endl;
+    cout << minSteps(n) << endl;
 
     return 0;
 }

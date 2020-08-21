@@ -23,7 +23,7 @@ ll stepsTopDown(ll n, ll dp[]){
     }
     else if(n%2==0){
         if(dp[n/2] != 0 && dp[n-1] != 0){
-            ll ans = min(dp[n/3], dp[n-1]) + 1;
+            ll ans = min(dp[n/2], dp[n-1]) + 1;
             dp[n] = ans;
             return ans;
         }
