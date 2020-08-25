@@ -25,7 +25,26 @@ int main(){
 
 	cout<<"Max No "<<max_so_far<<endl;
 	cout<<"Min No "<<min_so_far<<endl;
+    /*
+    In Vector:-
+    // Find the min element
+    cout << "\nMin Element = "
+         << *min_element(a.begin(), a.end());
 
+    // Find the max element
+    cout << "\nMax Element = "
+         << *max_element(a.begin(), a.end());
+
+    In Array:-
+    / Find the minimum element
+    cout << "\nMin Element = "
+         << *min_element(arr, arr + n);
+
+    // Find the maximum element
+    cout << "\nMax Element = "
+         << *max_element(arr, arr + n);
+
+    */
 
 	return 0;
 }
