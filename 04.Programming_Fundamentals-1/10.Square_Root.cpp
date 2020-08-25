@@ -31,7 +31,7 @@ int main() {
     Inbuilt Functions to compute square root:-
     1. (For double)sqrt:- It returns the square root of a number to type double
     2. (For long long)sqrtl:- It returns the square root of a number to type long double with more precision.
-    3. (For float)sqrtf
+    3. (For float)sqrtf:- It returns the square root of a number to type float
     Left mentioned things are what value they return and in all of the above sqrtl has most precision
 
     Usage:-
