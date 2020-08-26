@@ -1,8 +1,10 @@
 #include<iostream>
 using namespace std;
+
 int main() {
 	int t,n;
 	cin >> t;
+
 	while(t--){
 		cin >> n;
 		int a[n];
@@ -14,8 +16,9 @@ int main() {
 		{
 			currentSum += a[i];
 
-			if(currentSum < 0)
+			if(currentSum < 0){
 				currentSum = 0;
+			}
 
             maxSum = max(currentSum,maxSum);
 
