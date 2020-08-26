@@ -24,7 +24,7 @@ int main(){
             //Elements of subarray(i, j)
             currentSum = 0;
             if(i == 0)
-                cuurentSum = cumSum[j];
+                currentSum = cumSum[j];
             else
                 currentSum = cumSum[j] - cumSum[i-1];
             //Update maximumSum if currentSum > maximumSum
