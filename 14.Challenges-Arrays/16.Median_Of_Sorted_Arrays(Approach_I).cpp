@@ -33,6 +33,8 @@ b) From first element of ar2 to m2 (ar2[0…|n/2|])
 5) Repeat the above process until size of both the subarrays becomes 2.
 6) If size of the two arrays is 2 then use below formula to get the median.
 Median = (max(ar1[0], ar2[0]) + min(ar1[1], ar2[1]))/2
+
+Video Link:- https://www.youtube.com/watch?v=svOIvIozkcs
 */
 
 #include<iostream>
