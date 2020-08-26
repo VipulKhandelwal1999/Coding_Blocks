@@ -1,9 +1,6 @@
 #include<iostream>
 using namespace std;
 
-
-
-
 int main() {
 
 	int b[]  = {1, 2, 3};
@@ -23,9 +20,6 @@ int main() {
 	char s4[10];
 	cin >> s4;
 	cout << s4 << endl;
-
-
-
 
 	return 0;
 }
