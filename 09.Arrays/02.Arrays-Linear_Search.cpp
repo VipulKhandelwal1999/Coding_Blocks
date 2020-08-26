@@ -35,6 +35,11 @@ int main() {
 		cout << key << "is not present " << endl;
 	}
 
+    /*
+    find(arr, arr+n, key) - arr = It will return the index at which element is present
+    Finds the element in the given range of numbers. Returns an iterator to the first element in the range [first,last) that compares equal to val. If no such element is found, the function returns last.
+    */
+
 	return 0;
 
 }
