@@ -104,6 +104,7 @@ int count(node*root){
     return 1 + count(root->left) + count(root->right);
 }
 
+//O(n)
 void bfs(node *root){
     queue<node*> q;
     q.push(root);
