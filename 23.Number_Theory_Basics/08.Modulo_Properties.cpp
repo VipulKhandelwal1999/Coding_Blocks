@@ -23,7 +23,9 @@ int main(){
             (a/b)%m = ((a%m)*(b(inverse)%m))%m
             (a/b)%m = ((a%m)* (pow(b, m-2)%m))%m
 
-        2.Using Extended Euclid's Algorithm
+        2.Using Extended Euclid's Algorithm:-
+        Refer:-
+        https://www.geeksforgeeks.org/multiplicative-inverse-under-modulo-m/#:~:text=To%20find%20multiplicative%20inverse%20of,value%20of%20gcd%20as%201.&text=We%20can%20remove%20the%20second,0%20for%20an%20integer%20y.
     */
 
 
