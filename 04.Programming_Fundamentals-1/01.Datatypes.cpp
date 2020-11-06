@@ -2,8 +2,7 @@
 using namespace std;
 
 int main(){
-
-
+	
 	//Primitive Datatypes
 	//int , float, bool, double, char
 
