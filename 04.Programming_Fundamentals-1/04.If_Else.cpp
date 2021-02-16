@@ -21,7 +21,7 @@ int main(){
 
 	*/
 
-	if(n%2==0 and n%3==0){
+	if((n%2==0) and (n%3==0)){
 		cout<<n<<" is div by 2 and 3"<<endl;
 		cout<<"If block!"<<endl;
 	}

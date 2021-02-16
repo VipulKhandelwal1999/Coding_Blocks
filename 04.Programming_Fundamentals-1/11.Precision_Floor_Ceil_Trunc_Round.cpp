@@ -1,7 +1,6 @@
 /*
 Precision of floating point numbers in C++ (floor(), ceil(), trunc(), round() and setprecision())
-Last Updated: 29-05-2017
-Decimal equivalent of 1/3 is 0.33333333333333…. An infinite length number would require infinite memory to store, and we typically have 4 or 8 bytes. Therefore, Floating point numbers store only a certain number of significant digits, and the rest are lost. The precision of a floating point number defines how many significant digits it can represent without information loss. When outputting floating point numbers, cout has a default precision of 6 and it truncates anything after that.
+Decimal equivalent of 1/3 is 0.33333333333333ï¿½. An infinite length number would require infinite memory to store, and we typically have 4 or 8 bytes. Therefore, Floating point numbers store only a certain number of significant digits, and the rest are lost. The precision of a floating point number defines how many significant digits it can represent without information loss. When outputting floating point numbers, cout has a default precision of 6 and it truncates anything after that.
 
 Given below are few libraries and methods which are used to provide precision to floating point numbers in C++:
 
@@ -121,7 +120,7 @@ Output:
 -2
 
 
-setprecision(): Setprecision when used along with ‘fixed’ provides precision to floating point numbers correct to decimal numbers mentioned in the brackets of the setprecison.
+setprecision(): Setprecision when used along with ï¿½fixedï¿½ provides precision to floating point numbers correct to decimal numbers mentioned in the brackets of the setprecison.
 
 // C++ program to demonstrate working of setprecision()
 // in C/C++
