@@ -3,17 +3,17 @@ using namespace std;
 
 int main() {
 
-	//Switch Case
-	/* Design a Menu - where pressing a button gives you the corresponding item
+	/*	Switch Case
+		Design a Menu - where pressing a button gives you the corresponding item
 
-	B - Burger
-	M - Maggi
-	P - Pizza
-	C - Coke
-	D - Dosa
-	.
-	.
-	and so on!
+		B - Burger
+		M - Maggi
+		P - Pizza
+		C - Coke
+		D - Dosa
+		.
+		.
+		and so on!
 	*/
 	char ch;
 	cin >> ch;
