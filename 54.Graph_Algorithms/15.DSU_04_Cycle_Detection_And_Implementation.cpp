@@ -40,7 +40,7 @@ class Graph{
             int s2 = findSet(y, parent);
 
             if(s1 != s2){
-                parent[s1] = s2;
+                parent[s2] = s1;
             }
         }
 

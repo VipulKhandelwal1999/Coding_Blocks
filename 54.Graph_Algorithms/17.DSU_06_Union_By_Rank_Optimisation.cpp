@@ -3,7 +3,7 @@
     -------------------------------
     1.Path Compression Optimisation In DSU (Find Fn)
     2.Union By Rank (Union Fn)
-
+    If both are added for Optimisation, then Complexity reduced To O(1)
 */
 
 #include<bits/stdc++.h>
