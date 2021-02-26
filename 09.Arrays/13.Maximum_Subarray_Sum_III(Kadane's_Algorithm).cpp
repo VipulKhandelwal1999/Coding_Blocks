@@ -1,6 +1,22 @@
 #include<iostream>
 using namespace std;
 
+int maxSubarraySum(int arr[], int n){
+    
+    // Your code here
+    int sum = 0;
+    int ans = INT_MIN;
+    for(int i=0; i<n; i++){
+        sum += arr[i];
+        if(sum > ans)
+            ans = sum;
+        if(sum < 0)
+            sum = 0;
+    }
+    return ans;
+    
+}
+
 int main() {
 	int t,n;
 	cin >> t;
