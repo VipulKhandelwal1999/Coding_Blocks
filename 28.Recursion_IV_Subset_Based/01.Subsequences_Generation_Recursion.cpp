@@ -25,7 +25,7 @@ int main(){
 
     char input[] = "abc";
     char output[10];
-    generate_subsequence(input, output, 0, 0)
+    generate_subsequence(input, output, 0, 0);
 
     return 0;
 }
