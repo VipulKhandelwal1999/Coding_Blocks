@@ -32,11 +32,9 @@ class LinkedList{
 
 //Passing a pointer variable by reference
 void insertAtHead(node* &head, int data){
-
     node *n = new node(data);
     n->next = head;
     head = n;
-
 }
 //Passed By Value
 void print(node* head){
@@ -110,6 +108,7 @@ void deleteAtHead(node* &head){
     delete temp;
     return;
 }
+
 void deleteAtTail(node* &head){
 
     node* prev = NULL;

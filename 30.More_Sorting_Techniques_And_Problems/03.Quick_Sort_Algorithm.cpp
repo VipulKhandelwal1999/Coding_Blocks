@@ -28,11 +28,10 @@ int partition(ll *a, int s, int e)
     int i=s-1;
     int j=s;
     for(;j<e;j++)
-    if(a[j]<=pivot)
-        {
-            i++;
-            swap(a[i],a[j]);
-        }
+    if(a[j]<=pivot){
+        i++;
+        swap(a[i],a[j]);
+    }
     // bring pivot element back to its original position
     swap(a[i+1],a[e]);
     return i+1;

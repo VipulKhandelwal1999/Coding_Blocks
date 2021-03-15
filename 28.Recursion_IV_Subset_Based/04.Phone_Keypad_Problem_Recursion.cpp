@@ -3,8 +3,7 @@ using namespace std;
 #define ll long long
 
 char keypad[][10]={"","","ABC","DEF","GHI","JKL","MNO","PQRS","TUV","WXYZ"};
-void phone_keypad(char *in, char *out, int i, int j)
-{
+void phone_keypad(char *in, char *out, int i, int j){
     //base case
     if(in[i]=='\0')
     {
