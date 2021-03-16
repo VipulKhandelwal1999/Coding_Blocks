@@ -156,6 +156,7 @@ void buildList(node* &head){
         cin >> data;
     }
 }
+
 istream& operator>>(istream &is, node* &head){
     buildList(head);
     return is;

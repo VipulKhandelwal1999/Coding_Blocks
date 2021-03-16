@@ -203,7 +203,7 @@ node* mid_point_fast_runner(node* head){
     }
 
     node* slow = head;
-    node* fast = head->next;
+    node* fast = head;
 
     while(fast != NULL && fast->next != NULL){
         fast = fast->next->next;
