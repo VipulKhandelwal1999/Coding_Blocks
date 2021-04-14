@@ -16,12 +16,11 @@ int longestSubarraySum(int arr[], int n, int k){
         if(pre == k){
             len = max(len, i+1);
         }
+        if(m.find(pre) != m.end()){
+            m[pre] = i;
+        }
         if(m.find(pre-k) != m.end()){
             len = max(len, i-m[pre-k]);
-        }
-        else{
-            //store the first occurence
-            m[pre] = i;
         }
     }
     return len;

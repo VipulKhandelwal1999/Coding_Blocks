@@ -15,10 +15,6 @@ int main()
                       SCHEDULE.push_back(make_pair(b,a));
              }
              sort(SCHEDULE.begin(),SCHEDULE.end());
-              /*for(itr=SCHEDULE.begin();itr!=SCHEDULE.end();itr++)
-             {
-                        cout<<itr->first<<" "<<itr->second<<endl;
-              }*/
               ans=0;
               prevend=-1;
               for(itr=SCHEDULE.begin();itr!=SCHEDULE.end();itr++)

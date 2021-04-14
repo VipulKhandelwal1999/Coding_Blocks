@@ -7,6 +7,7 @@ void insertAtBottom(stack<int> &s, int x){
         s.push(x);
         return;
     }
+    
     //rec case
     int data = s.top();
     s.pop();

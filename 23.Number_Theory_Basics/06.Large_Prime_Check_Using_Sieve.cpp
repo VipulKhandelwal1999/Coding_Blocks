@@ -19,7 +19,7 @@ void sieve() {
     for(long long int i=2; i<=n; i++){
         if(b[i]){
             primes.push_back(i);
-            for(long long int j = i*i; j<=n; j++){
+            for(long long int j = i*i; j<=n; j+=i){
                 b[j] = 0;
             }
         }
