@@ -1,4 +1,4 @@
-#include<iostream>
+#include<bits/stdc++.h>
 using namespace std;
 
 int maxSubarraySum(int arr[], int n){
@@ -24,20 +24,18 @@ int main() {
 	while(t--){
 		cin >> n;
 		int a[n];
-		int currentSum = 0, maxSum = 0;
+		int currentSum = 0, maxSum = INT_MIN;
 		for(int i=0; i<n; i++)
 			cin >> a[i];
 
-		for(int i=0; i<n; i++)
-		{
+		for(int i=0; i<n; i++){
 			currentSum += a[i];
-
+			if(currentSum > maxSum){
+				maxSum = currentSum;
+			}
 			if(currentSum < 0){
 				currentSum = 0;
 			}
-
-            maxSum = max(currentSum,maxSum);
-
 		}
 		cout << maxSum << endl;
 	}
