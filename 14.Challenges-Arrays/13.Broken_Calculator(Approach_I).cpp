@@ -18,16 +18,16 @@ Explanation
 for factorial of 5 we have 5 x 4 x 3 x 2 x 1 = 120
 
 Logic:-
-Create an array ‘res[ ]’ of MAX size where MAX is number of maximum digits in output.
-Initialize value stored in ‘res[ ]’ as 1 and initialize ‘res_size’ (size of ‘res[ ]’) as 1.
-Do following for all numbers from x = 2 to n……
+Create an array ï¿½res[ ]ï¿½ of MAX size where MAX is number of maximum digits in output.
+Initialize value stored in ï¿½res[ ]ï¿½ as 1 and initialize ï¿½res_sizeï¿½ (size of ï¿½res[ ]ï¿½) as 1.
+Do following for all numbers from x = 2 to nï¿½ï¿½
 
 a) Multiply x with res[ ] and update res[ ] and res_size to store the multiplication result.
 
 multiply(res[ ], x)
 
 Initialize carry as 0.
-Do following for i = 0 to res_size – 1 …..
+Do following for i = 0 to res_size ï¿½ 1 ï¿½..
 
 a) Find value of res[i] * x + carry. Let this value be prod.
 

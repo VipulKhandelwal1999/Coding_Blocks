@@ -30,7 +30,7 @@ Problem can be solved by dividing the input string at position, i, either if  is
 #define nn 100010
 
 using namespace std;
-​
+
 int main()
 {
     int n;
