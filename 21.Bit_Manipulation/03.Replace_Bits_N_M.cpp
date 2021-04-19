@@ -1,8 +1,9 @@
 #include<iostream>
 using namespace std;
 
-//Replace Bits in N by M
 /*
+Replace Bits in N by M
+
 You are given two 32-bit numbers, N and M, and two bit positions, i and j.
 Write a method to set all bits between i and j in N equal
 to M (e.g., M becomes a substring of N located at i and starting at j).
@@ -35,7 +36,6 @@ int main() {
 	int i = 1, j = 3;
 	int m = 2;
 	cout << replaceBits(n, m, i, j) << endl;
-
 
 	return 0;
 }
