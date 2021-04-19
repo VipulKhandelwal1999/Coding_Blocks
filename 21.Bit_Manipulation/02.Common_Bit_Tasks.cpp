@@ -28,7 +28,7 @@ void updateBit(int &n, int i, int v) {
 	n = cleared_n | (v << i);
 }
 
-int clearLastIBits(int n, int i) {
+int clearLastIBits(int n, int i){
 	int mask = (-1 << i);
 	return n & mask;
 }

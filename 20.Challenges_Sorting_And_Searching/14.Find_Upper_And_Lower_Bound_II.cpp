@@ -34,7 +34,9 @@ Logic:-
 
 */
 
-#include<iostream>
+#include<bits/stdc++.h>
+using namespace std;
+#define ll long long
 
 int findLowerBound(int num, int a[],int n){
     int lowerBound = -1;
